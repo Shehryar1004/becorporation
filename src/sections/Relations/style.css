@@ -29,7 +29,7 @@
 .relation_card a {
     display: inline-block;
     margin-top: 16px;
-    color: limegreen
+    color: #55c594;
 }
 
 .relation_card a div {
@@ -61,21 +61,24 @@
 }
 
 .relation_content-container h2 span{
-    color: limegreen;
+    color: #55c594;
 }
 
 .relation_content-container h4 {
     font-style: italic;
+    font-weight: 500;
+    font-size: 1.4rem;
     margin-bottom: 2rem;
 }
 
 .relation_content-container p {
-    color: #aaa
+    color: #aaa;
+    line-height: 1.6rem;
 }
 
 .relation_content-container a {
     display: inline-block;
-    background-color: limegreen;
+    background-color: #55c594;
     color: #fff;
     padding: 1.5rem 2rem;
     margin-top: 2rem;
@@ -84,7 +87,7 @@
 
 .relation_content-container a:hover {
     cursor: pointer;
-    background-color: lime;
+    background-color: #55c594;
 }
 
 @media screen and (min-width: 800px) {
@@ -111,5 +114,13 @@
 @media screen and (min-width: 1100px) {
     .relation_card {
         height: 170px;
+    }
+
+    .relation_content-container h2 {
+        font-size: 2.5rem;
+    }
+
+    .relation_content-container h4 {
+        font-size: 1.4rem;
     }
 }

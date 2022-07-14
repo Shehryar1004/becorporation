@@ -19,22 +19,22 @@
 }
 
 .balance_text-container span {
-    color: green;
+    color: #55c594;
 }
 
 .balance_text-container a {
     display: inline-block;
     text-decoration: none;
-    color: green;
+    color: #55c594;
     padding: 1rem 2rem;
     margin-top: 2rem;
-    border: 1px solid green;
+    border: 1px solid #55c594;
     border-radius: 5px;
     transition: all 0.4s;
 }
 
 .balance_text-container a:hover {
-    background-color: green;
+    background-color: #55c594;
     color: white;
 }
 
@@ -60,7 +60,7 @@
 
 
 .balance_value-container span {
-    background-color: limegreen;
+    background-color: #55c594;
     padding: 7px 15px;
 }
 

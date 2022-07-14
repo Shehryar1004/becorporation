@@ -32,7 +32,7 @@ const Footer = () => {
                 </div>
             </div>
             <div className='footer_bottomPart'>
-                <p>&#169; 2022 Betheme by Muffin Group | All Rights Reserved | Powered by Wordpress</p>
+                <p>&#169; 2022 Betheme by Muffin Group | All Rights Reserved | Powered by Wordpress | Designed By TeamTayyab</p>
                 <div className='footer_socialMedia-container'>
                     <FaFacebookF />
                     <AiOutlineTwitter />

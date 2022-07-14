@@ -2,12 +2,12 @@ import React, {useState} from 'react'
 import './style.css'
 
 const Balance = () => {
-  const [profit, setProfit] = useState(13.7); 
+  const [profit, setProfit] = useState(13.9); 
 
   const backgroundForProfit = 
   profit > 0 ?
   {
-    backgroundColor: '#080' //green
+    backgroundColor: '##55c594' //green
   } :
   {
     backgroundColor: '#800', //red

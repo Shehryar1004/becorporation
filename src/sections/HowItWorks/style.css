@@ -12,7 +12,10 @@
 }
 
 .hiw_container-steps {
-
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
 .hiw_step-container {
@@ -39,6 +42,7 @@
     border-radius: 12px;
     width: 40px;
     height: 40px;
+    margin-bottom: 1.2rem;
 }
 
 .hiw_step-icon p {
@@ -50,14 +54,20 @@
     font-size: 0.9rem;
 }
 
-.hiw_downLine {
-    border: 1px solid white;
+.hiw_downArrow, .hiw_rightArrow{
+    width: 56px;
+    height: 56px;
 }
 
-.hiw_rightLine {
-    border:1px solid white;
+.hiw_downArrow {
+    margin: 10px 0;
+}
+
+.hiw_rightArrow {
     display: none;
 }
+
+
 
 .hiw_absoluteImg {
     position: absolute;
@@ -74,6 +84,7 @@
 @media screen and (min-width: 800px) {
     .hiw_container-steps {
         display: flex;
+        flex-direction: row;
         justify-content: space-between;
     }
 
@@ -87,13 +98,12 @@
         flex: 1;
     }
 
-    .hiw_rightLine {
-        display: block;
-        flex:1;
+    .hiw_downArrow {
+        display: none;
     }
 
-    .hiw_downLine {
-        display: none;
+    .hiw_rightArrow {
+        display: block;
     }
 
     .hiw_absoluteImg {

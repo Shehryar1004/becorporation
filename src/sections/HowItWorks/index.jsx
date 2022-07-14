@@ -1,4 +1,5 @@
 import './style.css'
+import {BsArrowDown, BsArrowRight} from 'react-icons/bs'
 
 const Step = ({step, text, lastStep}) => {
     return (
@@ -20,8 +21,14 @@ const HowItWorks = () => {
                 <h2>How It Works?</h2>
                 <div className='hiw_container-steps'>
                     <Step step='1' text='Lorem epsum larigaade spectrum, insanium'/>
+                    <BsArrowDown className='hiw_downArrow' />
+                    <BsArrowRight className='hiw_rightArrow' />
                     <Step step='2' text='Macius mordegae larigaade themanium'/>
+                    <BsArrowDown className='hiw_downArrow'/>
+                    <BsArrowRight className='hiw_rightArrow' />
                     <Step step='3' text='Solicitus caan drisen aeshteru ja nai'/>
+                    <BsArrowDown className='hiw_downArrow'/>
+                    <BsArrowRight className='hiw_rightArrow' />
                     <Step step='4' text='Omae wa mo shinderu' lastStep='true'/>
                 </div>
             </div>
