@@ -1,0 +1,105 @@
+.footer_container {
+    position: relative;
+    padding-top: 100px;
+    padding-bottom: 20px;
+}
+
+.footer_logo-container {
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+}
+
+.footer_address {
+    margin-top: 2rem;
+    margin-bottom: 1rem;
+}
+
+.footer_email {
+    display: flex;
+    align-items: center;
+}
+
+.footer_email p {
+    margin-left: 0.7rem;
+}
+
+.footer_headline-container {
+    margin-top: 20px;
+}
+
+.footer_headline-container h2 {
+    font-size: 32px;
+}
+
+.footer_headline-container h2 span {
+    color: limegreen
+}
+
+.footer_headline-container a {
+    display: inline-block;
+    font-size: 1.2rem;
+    color: limegreen;
+    margin-top: 1.7rem;
+}
+
+.footer_headline-container a:hover {
+    cursor: pointer;
+    color: green;
+}
+
+.footer_bottomPart {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 2rem;
+    padding-top: 2rem;  
+    border-top: 1px solid #aaa;
+    color: #888;
+}
+
+.footer_bottomPart p {
+    font-size: 0.7rem;
+    margin-bottom: 20px;
+}
+
+.footer_socialMedia-container {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+}
+
+.footer_socialMedia-container *:hover {
+    cursor: pointer;
+    color: limegreen;
+}
+
+.footer_img {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 200px;
+    height: 125px;
+    background-image: url('../../assets/v-sign_2.png');
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    z-index: -1;
+}
+
+@media screen and (min-width: 800px) {
+    .footer_topPart {
+        display: flex;
+        gap: 5rem;
+    }
+    .footer_img {
+        width: 400px;
+        height: 250px;
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    .footer_img {
+        right: 7%;
+    }
+}

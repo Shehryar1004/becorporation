@@ -1,0 +1,89 @@
+.model_container {
+    padding-top: 100px;
+    padding-bottom: 100px;
+    background-color: #efefef;
+}
+
+.model_content-container {
+    display: flex;
+    flex-direction: column;
+}
+
+.model_image-container {
+    position: relative;
+    flex:1;
+}
+
+.model_image-container img {
+    position: relative;
+    width: 100%;
+    z-index: 2;
+}
+
+.model_dots {
+    position: absolute;
+    bottom:-30px;
+    right:-30px;
+    background-image: url('../../assets/dots_2.png');
+    background-position: center;
+    background-size: cover;
+    width: 200px;
+    height: 200px;
+    z-index: 1;
+}
+
+.model_text-container {
+    flex:1;
+    display: flex;
+    flex-direction: column;
+    padding-top: 5%;
+}
+
+.model_text-container h2 {
+    font-size: 3rem;
+}
+
+.model_text-container h2 span {
+    color: limegreen
+}
+
+.model_text-container ul {
+    list-style-type: none;
+}
+
+.model_text-container ul li {
+    color: #888;
+    font-size: 1.2rem;
+    margin: 12px 0;
+}
+
+.model_text-container ul li::before {
+    content: "\2713 ";
+    margin-right: 12px;
+}
+
+.model_button-container {
+    display: flex;
+    justify-content: center;  
+    margin-top: 50px; 
+}
+
+.model_button-container a {
+    display: block;
+    padding: 1.2rem 2.5rem;   
+    background-color: limegreen;
+    color: #fff;
+    border-radius: 8px;
+}
+
+.model_button-container a:hover {
+    cursor: pointer;
+    background-color: green;
+}
+
+@media screen and (min-width: 800px) {
+    .model_content-container {
+        gap: 2rem;
+        flex-direction: row;
+    }
+}

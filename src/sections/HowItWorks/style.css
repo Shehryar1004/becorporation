@@ -1,0 +1,102 @@
+.hiw_container {
+    position: relative;
+    background-color: #261118;
+    color: #fff;
+    padding-top: 100px;
+    padding-bottom: 100px;
+}
+
+.hiw_container-content h2 {
+    font-size: 2rem;
+    margin-bottom: 32px;
+}
+
+.hiw_container-steps {
+
+}
+
+.hiw_step-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+    margin-top: 20px; 
+    padding: 0 20%;  
+    text-align: center;
+}
+
+.hiw_step-container > div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.hiw_step-icon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #fff;
+    border-radius: 12px;
+    width: 40px;
+    height: 40px;
+}
+
+.hiw_step-icon p {
+    color: #261118;
+    font-size: 1.2rem;
+}
+
+.hiw_step-text {
+    font-size: 0.9rem;
+}
+
+.hiw_downLine {
+    border: 1px solid white;
+}
+
+.hiw_rightLine {
+    border:1px solid white;
+    display: none;
+}
+
+.hiw_absoluteImg {
+    position: absolute;
+    top:0; 
+    right: 0;
+    width: 200px;
+    height: 100px;
+    background-image: url('../../assets/v-sign_1.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+@media screen and (min-width: 800px) {
+    .hiw_container-steps {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .hiw_step-container {
+        flex-direction: row;
+        gap:0;
+        padding: 0;
+    }
+
+    .hiw_step-container > div {
+        flex: 1;
+    }
+
+    .hiw_rightLine {
+        display: block;
+        flex:1;
+    }
+
+    .hiw_downLine {
+        display: none;
+    }
+
+    .hiw_absoluteImg {
+        right: 10%;
+    }
+}
