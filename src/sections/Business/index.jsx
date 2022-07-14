@@ -6,7 +6,7 @@ import './style.css'
 
 const Business = () => {
     return(
-        <div className='business_container container'>
+        <div className='business_container container' id='business'>
             <div className='business_image-container'>
                 <img src={business1}/>
             </div>

@@ -4,7 +4,7 @@ import './style.css'
 
 const Hero = () => {
     return(
-        <div className='hero_container'>
+        <div className='hero_container' id='hero'>
             <div className='container'>
                 <h2>Increase Your <br />
                     <span>income.</span>

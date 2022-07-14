@@ -15,7 +15,7 @@ const Step = ({step, text, lastStep}) => {
 
 const HowItWorks = () => {
     return(
-        <div className='hiw_container container'>
+        <div className='hiw_container container' id='howItWorks'>
             <div className='hiw_container-content'>
                 <h2>How It Works?</h2>
                 <div className='hiw_container-steps'>

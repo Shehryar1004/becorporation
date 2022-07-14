@@ -3,7 +3,7 @@ import './style.css'
 
 const Model = () => {
     return(
-        <div className='model_container container'>
+        <div className='model_container container' id='model'>
             <div className='model_content-container'>
                 <div className='model_image-container'>
                     <img src={modelImage} />

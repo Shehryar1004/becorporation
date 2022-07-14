@@ -15,7 +15,7 @@ const Balance = () => {
   }
 
     return(
-        <div className='balance_container container'>
+        <div className='balance_container container' id='balance'>
           <div className='balance_dots-container'></div>
           <div className='balance_text-container'>
             <h2>International <br /><span>Banking Solutions</span><br /> for Business</h2>

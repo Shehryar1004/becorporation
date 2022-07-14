@@ -1,0 +1,116 @@
+.navbar {
+    position: sticky;
+    top:0;
+    background-color: white;;
+    z-index: 2;
+}
+
+.navbar_container {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 9vh;
+    padding: 0 1rem;
+    background-color: white;
+}
+
+.navbar_container > div {
+    z-index: 3;
+} 
+
+.navbar_logo-container {
+    flex: 3;
+    display: flex;
+    align-items: center;
+    height: 100%;
+    background-color: #fff;
+}
+
+.navbar_links-container {
+    display: none;
+    flex: 4;
+    height: 100%;
+    max-width: 1000px;
+    background-color: white;
+}
+
+.navbar_links-container ul {
+    flex: 1;
+    display: flex;
+    justify-content: space-around;
+    list-style-type: none;
+}
+
+.navbar_links-container ul li a {
+    text-decoration: none;
+    color: #1e1e1e;
+    transition: all 0.2s ease-in;
+    border-bottom: 1px solid transparent;
+}
+
+.navbar_links-container ul li a:hover {
+    border-bottom: 1px solid black;
+}
+
+.navbar_button-icon {
+    height: 45px;
+    width: 45px;
+}
+
+.navbar_button-icon:hover {
+    cursor: pointer;
+}
+
+.navbar_container .navbar_menu-container {
+    position: absolute;
+    top: 100%;
+    left:0;
+    right:0;
+    z-index: 1;
+    background-color: white;
+    transform: translateY(-150%);
+    list-style-type: none;
+    transition: all 0.4s ease-out;
+}
+
+.navbar_container .navbar_menu-container.open {
+   transform: translateY(0);
+}
+
+.navbar_menu-container ul li {
+    text-align: center;
+    background-color: white;
+    transition: all 0.2s ease-in;
+}
+
+.navbar_menu-container ul li:hover {
+    cursor: pointer;
+    background-color: #ccc;
+    color: white;
+}
+
+.navbar_menu-container ul li a {
+    display: block;
+    height: 100%;
+    text-decoration: none;
+    padding: 10px 0;
+    color: #1e1e1e;
+}
+
+
+
+@media screen and (min-width: 720px) {
+    .navbar_links-container {
+        display: flex;
+        align-items: center;
+    }
+
+    .navbar_button-container {
+        display: none;
+    }
+
+    .navbar_menu-container {
+        display: none;
+    }
+}

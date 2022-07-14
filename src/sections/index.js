@@ -5,6 +5,7 @@ import Business from './Business'
 import Relations from './Relations'
 import Model from './Model'
 import Footer from './Footer'
+import Navbar from './Navbar'
 
 export {
     Hero,
@@ -13,5 +14,6 @@ export {
     Business,
     Relations,
     Model,
-    Footer
+    Footer,
+    Navbar
 }
